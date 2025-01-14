@@ -11,7 +11,7 @@ mkdir %BUILD_DIR%
 
 pushd %BUILD_DIR%
 
-set FLAGS=/nologo /Od /Zo /Zi /FC /std:c11 /Wall /wd4100 /wd4255 /wd5105 /wd5045 /WX /D UNICODE /D _UNICODE
+set FLAGS=/nologo /Od /Zo /Zi /FC /std:c11 /Wall /wd4100 /wd4255 /wd5105 /wd5045 /wd4819 /WX /D UNICODE /D _UNICODE
 
 cl %FLAGS% /Tc ..\main.c
 if %errorlevel% neq 0 (goto Fail)
